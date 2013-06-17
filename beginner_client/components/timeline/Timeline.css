@@ -1,0 +1,342 @@
+/*
+* Timeline Css File
+*/
+
+.Timeline {
+	width: 100%;
+	height: 100%;
+	background: #B1E5FF;
+	position: relative;
+	z-index: 3;
+	-webkit-box-shadow: 1px -1px 2px #ffffff;
+	-moz-box-shadow: 1px -1px 2px #ffffff;
+}
+
+/*command style*/
+.command {
+	position: absolute;
+	height: 35px;
+	width: 180px;
+	opacity: 0.9;
+	z-index: 4;
+	top: -10px;
+	right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+.command span {
+	display: inline-block;
+	height: 36px;
+	width: 35px;
+	margin: 0 0 5px 10px;
+}
+
+.command .add {
+    background: url(images/Plus-icon.png) no-repeat center center;
+}
+
+.command .del {
+    background: url(images/Minus-icon.png) no-repeat center center;
+}
+
+.command .insertAnimation {
+    background: url(images/Presentation-icon.png) no-repeat center center;
+}
+
+.command .recordAnimation {
+    background: url(images/UnRecord-icon.png) no-repeat center center;
+}
+
+.command .recording {
+    background: url(images/Record-icon.png) no-repeat center center;
+}
+
+/*staff style*/
+.Timeline .head {
+	position: relative;
+    width: 100%;
+	height: 35px;
+	z-index: 5;
+	background: #B1E5FF;
+}
+
+.Timeline .play {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(images/Play-icon.png) no-repeat center center;
+	background-color: #b1e5ff;
+	background-size: 20px 20px;
+	height: 35px;
+	z-index: 2;
+}
+
+.Timeline .pause {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(images/Pause-icon.png) no-repeat center center;
+	background-color: #b1e5ff;
+	background-size: 20px 20px;
+	height: 35px;
+	z-index: 2;
+}
+
+.Timeline .ruler {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 35px;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.Timeline .ruler span {
+	display: inline-block;
+	margin: 8px 0;
+	height: 22px;
+}
+
+.Timeline .ruler b {
+    display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	float: left;
+	margin-left: -15px;
+    text-align: center;
+}
+
+.Timeline .ruler b a {
+    display: block;
+	text-indent: 2px;
+	height: 20px;
+	width: 100%;
+}
+
+.Timeline .ruler b i {
+    display: block;
+	height: 10px;
+	width: 2px;
+	background: #4D4D4F;
+	margin-left: 15px;
+}
+
+/*frame style*/
+.Timeline .layers {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.Timeline .layerThumb {
+	position: relative;
+	float: left;
+	display: inline;
+	width: 5%;
+	height: 100%;
+	z-index: 2;
+}
+
+.Timeline .layerContent {
+	position: relative;
+	float: left;
+	display: inline;
+	width: 95%;
+	height: 100%;
+	z-index: 1;
+}
+
+.Timeline .layerContent .timeUnit {
+	position: absolute;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FEFEFE), to(#888888));
+	background: -moz-linear-gradient(top, #FEFEFE, #888888);
+	-webkit-box-shadow: 1px 2px 2px #6b808b;
+	height: 30px;
+	border-radius: 5px;
+	z-index: 4;
+	opacity: 0.9;
+	margin-top: 4px;
+	//min-Width: 50px;
+	display: inline-block;
+}
+
+.Timeline .layerContent .modify .keyframe{
+    opacity: 0.4;
+    display:none;
+}
+
+.Timeline .layerContent .animation {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#da7afc), to(#8d5dfc));
+    background: -moz-linear-gradient(top, #da7afc, #8d5dfc);
+}
+.Timeline .layerContent .record_animation {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7d859), to(#c1a847));
+	background: -moz-linear-gradient(top, #f7d859, #c1a847);
+}
+.Timeline .layerContent .record_animation .keyframe{
+    display:none;
+}
+
+.Timeline .layerContent .prevUnit {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	width: 0;
+	height: 5px;
+	background: #8ac7e6;
+	z-index: 1;
+	border-radius: 1px;
+	margin: 15px 0;
+}
+
+.Timeline .layerContent .keyframe {
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 16px;
+	z-index: 5;
+	background: url(images/Frame-icon.png) no-repeat 0 0;
+}
+
+.Timeline .layerContent .selected {
+	background: url(images/FrameSelected-icon.png) no-repeat 0 0;
+}
+
+.Timeline .layerContent .deleted {
+	background: url(images/FrameDeleted-icon.png) no-repeat 0 0;
+}
+
+.Timeline .layerContent span.rightHead, .Timeline .layerContent span.leftHead {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	margin: 3px 0;
+	border-radius: 3px;
+	visibility: hidden;
+}
+
+.Timeline .layerContent span.rightHead {
+	border-right: 0;
+	border-left: 15px solid #555555;
+	opacity: 0.8;
+	left: 0;
+}
+
+.Timeline .layerContent span.leftHead {
+	border-left: 0;
+	border-right: 15px solid #555555;
+	opacity: 0.8;
+	left: -30px;
+}
+
+.Timeline .layerThumb .current {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FEFEFE), to(#888888));
+	background: -moz-linear-gradient(top, #FEFEFE, #888888);
+}
+
+.Timeline .layerContent .current {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#267cb5), to(#3bb7d9));
+	background: -moz-linear-gradient(top, #267cb5, #3bb7d9);
+}
+
+.Timeline .layerThumb span {height: 36px; width: 100%;}
+.Timeline .layerThumb img {height: 36px; width: 48px; margin-left:10px;}
+
+.Timeline .layerContent ul, .Timeline .layerThumb ul {
+	position: relative; 
+	border-top: 2px solid #92b6c8;
+}
+
+.Timeline .layerContent li {
+    border-radius: 5px;
+	border-bottom: 2px solid #dff4ff;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d8edf1), to(#BDE0F0));
+	background: -moz-linear-gradient(top, #d8edf1, #BDE0F0);
+	-webkit-box-shadow: 1px 1px 2px #303030 inset;
+	-moz-box-shadow: 1px 1px 2px #303030 inset;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	visibility: hidden;
+}
+
+.Timeline .layerThumb li {
+    border-radius: 8px 0 0 8px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FEFEFE), to(#C0C0C0));
+	background: -moz-linear-gradient(top, #FEFEFE, #C0C0C0);
+	-webkit-box-shadow: 1px 2px 2px #6b808b;
+	-moz-box-shadow: 1px 2px 2px #6b808b;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+}
+
+.Timeline .layerContent li, .Timeline .layerThumb li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 36px; 
+	width: 100%; 
+}
+
+/*cursor style*/
+.Timeline .cursor {
+    position: absolute;	
+	left: 0;
+	width: 2px;
+	height: 300px;
+	background: red;
+	z-index: 5;
+	background: transparent;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+}
+
+.Timeline .cursor p {
+	height: 35px;
+	line-height: 40px;
+	width: 40px;
+	background: #4B86DA;
+	font-size: 14px;
+	text-align: center;
+	opacity: 0.8;
+	margin-left: -18px;
+	border-radius: 5px 5px 0 0;
+}
+
+.Timeline .cursor span {
+	display: block;
+	height: 100%;
+	width: 2px;
+	background: red;
+	opacity: 0.7;
+	margin-top: 0;
+}
+
+/*dragger style*/
+.dragger {
+	height: 20px;
+	width: 100%;
+    border-right:200px;
+	background: transparent;
+	font-size: 12px;
+	text-align: center;
+	z-index: 4;
+	position: relative;
+}
+
+.dragger span {
+	display: block;
+	width: 117px;
+	height: 20px;
+	background: url(images/Dragger-icon.png);
+}

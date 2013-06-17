@@ -1,0 +1,73 @@
+/*
+Gradient style sheet
+*/
+
+
+#gradientBox {
+display:none;
+width: 337px;
+height: 100px;
+background: #fff;
+position: absolute;
+right:140px;
+bottom:260px;
+z-index: 100;
+overflow:hidden;
+background:#fff;
+border:1px solid #ccc;
+border-radius:8px;
+box-shadow:2px 2px 2px #ccc;
+}
+
+#gradientColor {
+width: 280px;
+height: 30px;
+background: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 0 5px #ccc;
+position: absolute;
+top: 10px;
+left: 28px;
+}
+
+#sliderBox {
+width: 280px;
+height: 45px;
+background: #fff;
+position: absolute;
+top: 42px;
+left: 30px;
+}
+
+.slider {
+width: 30px;
+height: 40px;
+background: rgba(255,0,0,0);
+position: absolute;
+top: 5px;
+left: -16px;
+}
+
+.triangle {
+width: 20px;
+height: 20px;
+background: #fff;
+border: 1px solid #ccc;
+-webkit-transform: rotate(45deg);
+position: absolute;
+top: 0;
+left: 4px;
+z-index:0;
+}
+
+.selectedColor {
+width: 28px;
+height: 28px;
+background-color: #fff;
+border: 1px solid #ccc;
+z-index: 100000;
+position: absolute;
+top: 11px;
+left: 0;
+}

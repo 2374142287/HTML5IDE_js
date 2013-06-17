@@ -1,0 +1,49 @@
+/*
+colorPicker  style sheet
+*/
+
+.colorPickerBox {
+width: 315px;
+height: 257px;
+background: #fff;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-shadow: 0 0 8px #ccc;
+padding: 10px;
+position: absolute;
+top: 20px;
+left: 200px;
+z-index: 10000;
+}
+
+#colorBlock {
+border: 1px solid #000;
+border-radius: 5px;
+box-shadow: 0 0 8px #000;
+}
+
+#colorBar {
+border: 1px solid #000;
+border-radius: 5px;
+box-shadow: 0 0 8px #000;
+margin-left: 20px;
+overflow: hidden;
+}
+
+#blockBtn {
+width: 22px;
+height: 22px;
+background: url(images/picker_circle.png);
+position: absolute;
+left: 180px;
+top: 50px;
+}
+
+#barBtn {
+width: 42px;
+height: 15px;
+background: url(images/picker_slider.png);
+position: absolute;
+left: 279px;
+top: 10px;
+}

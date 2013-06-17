@@ -1,0 +1,21 @@
+﻿.tree{white-space:nowrap;cursor:default;font-size:12px;}
+.tree a.item{display:block;line-height:20px;height:20px;overflow:hidden;border-style:solid;border-color:transparent;border-width:0 1px;text-decoration:none;color:#000;outline:none;}
+.tree a.item:hover{background:#eee url(tree.gif) 0 -20px;border-color:#B8D6FB;}
+.tree a.item.on{background:#eee url(tree.gif) 0 -40px;border-color:#84ACDD;}
+.tree a.item *{float:left;outline:none;}
+.tree .hide{display:none;}
+.tree .chk{}
+.tree .img,.tree .ico{width:20px;height:20px;background-image:url(tree.gif);background-repeat:no-repeat;background-position:center;}
+.tree .loading{background-image:url(loading.gif);}
+.tree .root{background-position:0 -60px;}
+.tree .leaf{background-position:-20px -60px;}
+.tree .fold{background-position:-40px -60px;}
+.tree .open{background-position:-60px -60px;}
+.tree .i0{background-position:0 0;}
+.tree .i1{background-position:-20px 0;}
+.tree .i2{background-position:-40px 0;}
+.tree .i3{background-position:-60px 0;}
+.tree .i4{background-position:-80px 0;}
+.tree .i5{background-position:-100px 0;}
+.tree .i6{background-position:-120px 0;}
+.tree .i7{background-position:-140px 0;}

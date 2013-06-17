@@ -1,0 +1,71 @@
+@charset "utf-8";
+body,button,input,select,textarea{ font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "微软雅黑", sans-serif;_font-family:\5b8b\4f53;}
+sub,sup{line-height:0;}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{padding:0; font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "微软雅黑", sans-serif;}
+
+.warp .main .content_top{ width:815px; height:22px; padding:36px 25px 26px 120px;background:url(../../images/anilist_top.png) no-repeat bottom;}
+.warp .main .content_top .title{ color:#555; font-size:24px; line-height:30px; float:left; width:450px; margin-top:10px;}
+
+/*btn_create start*/
+.warp .main .content_top .btn_create{width:112px;height:40px;text-align:left;background-image: url(../../images/btn_create.png);background-repeat: no-repeat; float:right; margin-right:10px;}
+.warp .main .content_top .btn_create a{display:block;font-size:18px;color:#fff; line-height:36px; padding:0 3px 0 39px;}
+.warp .main .content_top .btn_create a:link, .warp .main .content_top .btn_create a:visited{text-decoration:none;}
+.warp .main .content_top .btn_create a:hover{color:#ffff69;}	
+/*btn_create end*/
+
+/*btn_back start*/
+.warp .main .content_top .btn_back{width:112px;height:40px;text-align:left;background-image: url(../../images/btn_back.png);background-repeat: no-repeat; float:right; margin-right:10px;}
+.warp .main .content_top .btn_back a{display:block;font-size:18px;color:#dd6600; line-height:36px; padding:0 3px 0 45px;}
+.warp .main .content_top .btn_back a:link, .warp .main .content_top .btn_back a:visited{text-decoration:none;}
+.warp .main .content_top .btn_back a:hover{color:#ff2a00;}	
+/*btn_back end*/
+
+/*top_btn start*/
+.warp .main .content_top .top_btn{width:70px;height:27px;text-align:center;background-image: url(../../images/top_btn.png);background-repeat: no-repeat; float:left; margin-top:-32px;}
+.warp .main .content_top .top_btn a{display:block;font-size:14px;color:#fff; line-height:25px;}
+.warp .main .content_top .top_btn a:link, .warp .main .content_top .top_btn a:visited{text-decoration:none;}
+.warp .main .content_top .top_btn a:hover{color:#ffff69;}	
+/*top_btn end*/
+
+
+.warp .main .content_conn{ width:960px;background:#f7f7f7;margin: 0 0 0 0px; padding:0px 0px 0px 0px; height:auto; overflow:hidden; }
+.warp .main .content_conn .albumlist{ width:930px; padding:20px 0px 10px 30px;}
+.warp .main .content_conn .albumlist ul{ widows:930px;}
+.warp .main .content_conn .albumlist li{ float:left; width:155px; padding:0 12px 24px 12px;}
+.warp .main .content_conn .albumlist li .albumlist_conn{width:155px; height:160px; padding:0 0 0 0px; margin:0 0 0 0px; background:url(../../images/anilist_unit.png) no-repeat;}
+.warp .main .content_conn .albumlist li .albumlist_conn .albumtxt{color:#333; font-size:15px; padding:12px 5px 1px 5px; height:23px;overflow:hidden; text-overflow: ellipsis; width:145px; text-align:center;white-space:nowrap;}
+.warp .main .content_conn .albumlist li .albumlist_conn .albumlist_pic{position:relative;width:113px;height:85px;left:21px;background:#f9eed9;display:table;}
+.warp .main .content_conn .albumlist li .albumlist_conn .albumlist_pic a{display:table-cell; vertical-align:middle;}
+.warp .main .content_conn .albumlist li .albumlist_conn .albumlist_pic img{display: block; margin-left: auto; margin-right: auto;}
+/*btn_edit_s start*/
+.warp .main .content_conn .albumlist li .albumlist_conn .btn_edit_s{width:32px;height:32px;text-align:left;background-image: url(../../images/btn_edit_s.png);background-repeat: no-repeat; float:left; margin:4px 16px 2px 28px; margin-top:0px;}
+
+.warp .main .content_conn .albumlist li .albumlist_conn .btn_pro_s{width:32px;height:32px;text-align:left;background-image: url(../../images/btn_pro_s.png);background-repeat: no-repeat; float:left; margin:4px 20px 2px 16px; margin-top:0px;}
+
+.warp .main .content_conn .albumlist li .albumlist_conn .btn_edit_s a{display:block;font-size:15px;color:#fff; line-height:26px; padding:0 3px 0 28px;color:#333;}
+/*
+.warp .main .content_conn .albumlist li .albumlist_conn .btn_edit_s a:link, .warp .main .content_conn .albumlist li .albumlist_conn .btn_edit_s a:visited{text-decoration:none;}
+.warp .main .content_conn .albumlist li .albumlist_conn .btn_edit_s a:hover{color:rgb(210, 11, 11);}	
+*/
+
+/*btn_edit_s end*/
+
+
+
+.warp .main .content_bottom{ width:960px; height:42px;background:url(../../images/anilist_bottom.png) no-repeat bottom;}
+
+
+
+/* anidetail */
+
+.warp .main .content_conn .detail_top{ width:870px; height:16px; background:url(../../images/anidetail_top.png) no-repeat; margin-top:5px; margin-left:62px;}
+.warp .main .content_conn .detail_conn{ width:870px; height:480px; background:url(../../images/anidetail_conn.png) repeat-y; margin-left:62px;}
+.warp .main .content_conn .detail_conn .animation{ width:640px; height:480px; margin-left:103px; background:#eee;}
+.warp .main .content_conn .detail_bottom{ width:870px; height:264px; background:url(../../images/anidetail_bottom.png) no-repeat; margin-left:62px;}
+
+/*btn_edit start*/
+.warp .main .content_conn .detail_bottom .btn_edit{width:126px;height:60px;text-align:left;background-image: url(../../images/btn_edit.png);background-repeat: no-repeat; float:right; margin-right:160px;}
+.warp .main .content_conn .detail_bottom .btn_edit a{display:block;font-size:20px;color:#fff; line-height:44px; padding:0 3px 0 56px;}
+.warp .main .content_conn .detail_bottom .btn_edit a:link, .warp .main .content_conn .detail_bottom .btn_edit a:visited{text-decoration:none;}
+.warp .main .content_conn .detail_bottom .btn_edit a:hover{color:#FFFF69;}	
+/*btn_edit end*/

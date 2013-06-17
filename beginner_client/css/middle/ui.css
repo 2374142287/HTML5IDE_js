@@ -1,0 +1,15 @@
+/*!
+ * [代码说明]
+ *
+ * Copyright 2010, Cleeki, Inc.
+ * All rights reserved
+ *
+ * 版权所有 未经许可不得传播
+ * 
+ * 触摸屏版本
+ */
+
+@import url(../ui_common.css);
+
+#touch_timeline{position:absolute;left:0;width:100%;height:300px;bottom:-170px;right:0;z-index:999;}
+#touch_prop{position:absolute;width:140px;top:64px;bottom:100px;right:0;overflow:auto;}

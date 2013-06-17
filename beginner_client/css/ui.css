@@ -1,0 +1,4 @@
+@import url(./ui_common.css);
+
+#touch_timeline{position:absolute;left:0;height:100px;bottom:0;right:0;}
+#touch_prop{position:absolute;width:140px;top:50px;bottom:100px;right:0;overflow:auto;}

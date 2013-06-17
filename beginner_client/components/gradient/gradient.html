@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='../colorPicker/colorPicker.css' rel='stylesheet'></link>
+		<link href='gradient.css' rel='stylesheet'>
+	</head>
+	<body>
+		<script src='../timeline/Slider.js'></script>
+	    <script src='../colorPicker/colorPicker.js'></script>
+		<script src='gradient.js'></script>
+		<script>
+			var gradient = new MGradient({
+				preEle: document.createElement('div'),
+				
+				change:  function(){
+					var that = this;
+					var currentSlider = gradient.getCurrentSlider();
+					var triangle = currentSlider.querySelector('div.triangle');
+					var istouch = 'ontouchstart' in window;
+					var eventstart = istouch ? 'touchstart' : 'mousedown';
+					var eventend = istouch ? 'touchend' : 'mouseup';
+					
+					currentSlider.addEventListener(eventend, function(){
+						that.preEle.style.background = '#fff';
+						triangle.style.background = '#000';
+						that.preEle = triangle;
+						
+						colorPicker.show();
+					}, false);
+				}
+			});
+			
+		    var colorPicker = new MColorPicker({
+				 startColor  :   '#c0c',
+				 middleColor :   '#000',
+				 endColor    :   '#f00',
+				 
+			     changeColor: function (color){
+                    var currentSlider = gradient.getCurrentSlider();
+					if (!currentSlider) return false;
+					var selectedColor = currentSlider.querySelector('div.selectedColor');
+					var gradientColor = currentSlider.parentNode.querySelector('div#gradientColor');
+					
+				    var r = color[0];
+					var g = color[1];
+					var b = color[2];
+					var a = color[3];
+					
+					var rgbaStr = 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
+					selectedColor.style.background = rgbaStr;
+					
+					switch(selectedColor.id){
+						case 'startColor':
+						this.startColor = rgbaStr;
+						break;
+						case 'middleColor':
+						this.middleColor = rgbaStr;
+						break;
+						case 'endColor':
+						this.endColor = rgbaStr;
+					}
+					
+					var percent = (currentSlider.offsetLeft + currentSlider.offsetWidth/2 - gradientColor.offsetLeft)/gradientColor.offsetWidth;
+					gradientColor.style.background = '-webkit-gradient(linear, 0% 0%, 100% 0%, from(' + this.startColor + '), color-stop(' + percent + ', ' + this.middleColor + '), to(' + this.endColor + '))';
+				 }
+			});
+			
+			colorPicker.hide();
+		</script>
+	</body>
+</html>

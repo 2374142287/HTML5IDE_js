@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='../gradient/colorPicker/colorPicker.css' rel='stylesheet'></link>
+		<link href='gradient.css' rel='stylesheet'>
+	</head>
+	<body>
+	    <script src='../gradient/colorPicker/colorPicker.js'></script>
+		<script src='gradient.js'></script>
+		<script src='example.js'></script>
+		<script>
+			var istouch = 'ontouchstart' in window;
+			var eventstart = istouch ? 'touchstart' : 'mousedown';
+			var eventmove = istouch ? 'touchmove' : 'mousemove';
+			var eventend = istouch ? 'touchend' : 'mouseup';
+			
+			
+			var gradient = new MGradient({
+				showColorPicker:  function(){
+					colorPicker.show();
+			    }
+			});
+			
+			var example = new MExample({
+			    showColorPicker:  function(){
+					colorPicker.show();
+			    }
+			});
+			
+			//gradient.gradientBox.style.left = '0px';
+			//gradient.gradientBox.style.top = '300px';
+			example.fontBack.style.left = '500px';
+			example.fontBack.style.top = '80px';
+			
+			var colorPicker = new MColorPicker({
+				setColor:  function(color){	
+					var r = color[0];//console.log(r);
+					var g = color[1];//console.log(g);
+					var b = color[2];//console.log(b);
+					var a = color[3];//console.log(a);
+					
+					gradient.synSliderColor(r,g,b,a);
+			        example.text.style.color = gradient.synObjectColor(r,g,b,a);	
+					gradient.synGradientColor(r,g,b,a);
+				}
+			});		        
+			//colorPicker.hide();
+			
+			
+			
+		</script>
+	</body>
+</html>

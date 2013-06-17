@@ -1,0 +1,31 @@
+@charset "utf-8";
+body,button,input,select,textarea{ font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "微软雅黑", sans-serif;_font-family:\5b8b\4f53;}
+sub,sup{line-height:0;}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{padding:0; font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, "微软雅黑", sans-serif;}
+
+.warp .main{width:960px; height:500px;margin:0 auto; margin-bottom:-40px;background:url(../../images/login_cloud.png) no-repeat bottom;}
+
+.login_header{ width:960px; height:65px;background:url(../../images/login_header.png) no-repeat bottom; margin-top:15px;}
+.login_header a{ margin:0 20px 0 40px;}
+.login_header .version{ margin-top:32px; color:#666; height:65px;display:inline; vertical-align:middle; position: absolute;}
+
+
+.loginBox{position: relative; width:313px; height:256px;margin-left:416px; margin-top:79px; margin-bottom:75px; padding:30px 40px 30px 40px;background: url(../../images/login_bg.png) no-repeat;}
+.loginBox .login_top{margin-top:0px; width:313px;height:35px;font-size:22px;color:#914e00; border-bottom:3px solid #eecd53; text-align:center; padding-top:10px;}
+
+.loginBox .login_conn{width:313px;margin: 0 0 0 0px; padding:0px 0px 0px 0px; text-align:center;}
+.loginBox .login_conn .prompt{ width:313px; color:#f85d00; font-size:18px; padding:10px 0 10px 0;}
+.loginBox .login_conn .input{ width:313px; height:35px; color:#844b00; font-size:20px; padding:10px 0 12px 0; vertical-align:middle;}
+.loginBox .login_conn .input .login_input{background:#fff;border-radius:30px;float:right;width:164px; height:36px;border:none; padding:3px 0 0 10px;margin:-10px 10px 0 0;padding-right:8px; display:inline;line-height:30px;font-size: 18px;color:#666; box-shadow:0 0 5px #EEB738; border:2px solid #fff;}
+.loginBox .login_conn .input .login_input:hover{border-color:rgba(246, 124, 24, 0.6);}
+.loginBox .login_conn .input .login_input:focus{border-color:#f67c18;}
+
+
+/*login_btn start*/
+.login_btn{width:135px;height:31px;padding:9px 13px 9px 13px;margin:0px 0 5px 81px;text-align:center;background-image: url(../../images/login_btn.png);background-repeat: no-repeat;}
+.login_btn a{height:30px;display:block;font-size:20px;color:#fff; line-height:30px;}
+.login_btn a:link, .login_btn a:visited{text-decoration:none;}
+.login_btn a:hover{color:#ffff69;}	
+/*login_btn end*/
+
+.login_plate{background:url(../../images/login_plate.png) no-repeat 0 0; width:358px; height:135px; float:left; margin-left:108px; margin-top:-33px; }

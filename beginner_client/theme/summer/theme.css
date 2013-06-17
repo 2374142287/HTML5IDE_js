@@ -1,0 +1,145 @@
+body{background-image:url(img/bg.png);}
+
+
+.mTimeline play{background:url(img/Play-icon.png) no-repeat center;}
+.mTimeline play.on{background-image:url(img/Stop-icon.png);}
+.mTimeline preview{background:url(img/Presentation-icon.png) no-repeat center;}
+.mTimeline glass{background:url(img/Board-icon.png) no-repeat center;}
+.mTimeline glass.on{background-color:rgba(255,255,255,.5);}
+.mTimeline add{background:url(img/Add-icon.png) no-repeat center;}
+.mTimeline del{background:url(img/Del-icon.png) no-repeat center;}
+.mTimeline dup{background:url(img/Duplicate-icon.png) no-repeat center;}
+.mTimeline next,.mTimeline prev{background:#fff url(img/Next-icon.png) no-repeat center;}
+.mTimeline prev{background-image:url(img/Previous-icon.png)}
+
+.mTimeline section ol{color:black;background:#D1F0FF;}
+.mTimeline play{background:url(img/Play-icon.png) no-repeat center;}
+.mTimeline play.on{background-image:url(img/Stop-icon.png);}
+.mTimeline preview{background:url(img/Presentation-icon.png) no-repeat center;}
+.mTimeline glass{background:url(img/Board-icon.png) no-repeat center;}
+.mTimeline add{background:url(img/Add-icon.png) no-repeat center;}
+.mTimeline del{background:url(img/Del-icon.png) no-repeat center;}
+.mTimeline dup{background:url(img/Duplicate-icon.png) no-repeat center;}
+.mTimeline next,.mTimeline prev{background:#FEECE1 url(img/Next-icon.png) no-repeat center;}
+.mTimeline prev{background-image:url(img/Previous-icon.png)}
+
+.mTimeline play,.mTimeline preview,.mTimeline glass,.mTimeline add,.mTimeline del,.mTimeline dup,.mTimeline next,.mTimeline prev{background-size:88% 88%;}
+
+#touch_bar{background-image:-webkit-linear-gradient(#D1F0FF,#D1F0FF 55%,#B1E5FF 56%,#B1E5FF);-webkit-box-shadow:0 1px 5px rgba(0,0,0,.5);}
+
+.touch_icon a,.touch_icon i,#arrange a,#align a,#transform a,#group a,#combine a,#setting a{background-size:50px 50px;}
+.touch_icon a.on{background-color:transparent;background-size:64px 64px;}
+.touch_setting a,.touch_setting i,#arrange a,#align a,#transform a,#group a,#combine a,#setting a{background-size:50px 50px;}
+.touch_setting a.on{background-color:transparent;background-size:64px 64px;}
+
+#tool_ctrl,#tool_shift{background-repeat:no-repeat;background-position:center;background-size:56px 56px;}
+#tool_ctrl{background-image:url(img/Ctrl-icon.png);}
+#tool_ctrl.on{background-image:url(img/Ctrl-press-icon.png);}
+#tool_shift{background-image:url(img/Shift-icon.png);}
+#tool_shift.on{background-image:url(img/Shift-press-icon.png);}
+
+#GroundIcon,#FillIcon,#RateIcon,#StrokeIcon,#ThickIcon,#AlphaIcon,#FontIcon,#LockIcon, #UnlockIcon
+{width:64px;height:64px;background-size:50px 50px;overflow:hidden;background-repeat:no-repeat;background-position:center;margin:auto;}
+#FontI,#FontTBottom,#FontTTop,#FontTMiddle,#FontB,#FontTextLeft,#FontTextRight,#FontTextMiddle{padding:2px; width:36px;height:36px;background-size:30px 30px;background-repeat:no-repeat;background-position:center;margin:auto;}
+
+#GroundIcon{background-image:url(img/Ground-icon.png);}
+#FillIcon{background-image:url(img/Fill-icon.png);}
+#RateIcon{background-image:url(img/Rate-icon.png);}
+#StrokeIcon{background-image:url(img/Stroke-icon.png);}
+#ThickIcon{background-image:url(img/Thick-icon.png);}
+#AlphaIcon{background-image:url(img/Alpha-icon.png);}
+#FontIcon{background-image:url(img/Font-icon.png);}
+#FontB{background-image:url(img/B-icon.png);}
+#FontI{background-image:url(img/I-icon.png);}
+#FontTBottom{background-image:url(img/T-bottom-icon.png);}
+#FontTTop{background-image:url(img/T-top-icon.png);}
+#FontTMiddle{background-image:url(img/T-middle-icon.png);}
+#FontTextLeft{background-image:url(img/Text-left-icon.png);}
+#FontTextRight{background-image:url(img/Text-right-icon.png);}
+#FontTextMiddle{background-image:url(img/Text-middle-icon.png);}
+#FontB.press{background-image:url(img/B-press-icon.png);}
+#FontI.press{background-image:url(img/I-press-icon.png);}
+#FontTBottom.press{background-image:url(img/T-bottom-press-icon.png);}
+#FontTTop.press{background-image:url(img/T-top-press-icon.png);}
+#FontTMiddle.press{background-image:url(img/T-middle-press-icon.png);}
+#FontTextLeft.press{background-image:url(img/Text-left-press-icon.png);}
+#FontTextRight.press{background-image:url(img/Text-right-press-icon.png);}
+#FontTextMiddle.press{background-image:url(img/Text-middle-press-icon.png);}
+#LockIcon{background-image:url(img/Lock-icon.png);}
+#UnlockIcon{background-image:url(img/Unlock-icon.png);}
+
+#SHAPE_SELECT{background-image:url(img/Select-icon.png);}
+#SHAPE_NODE{background-image:url(img/Node-icon.png);}
+#SHAPE_SCALE{background-image:url(img/Scale-icon.png);}
+#SHAPE_ZOOM{background-image:url(img/Zoom-icon.png);}
+#SHAPE_LINE{background-image:url(img/Line-icon.png);}
+#SHAPE_CURVE{background-image:url(img/Curve-icon.png);}
+#SHAPE_PENCIL{background-image:url(img/Pencil-icon.png);}
+#SHAPE_RECTANGLE{background-image:url(img/Rectangle-icon.png);}
+#SHAPE_ROUNDED{background-image:url(img/Round-icon.png);}
+#SHAPE_ELLIPSE{background-image:url(img/Ellipse-icon.png);}
+#SHAPE_POLYGON{background-image:url(img/Polygon-icon.png);}
+#SHAPE_PICTURE{background-image:url(img/Picture-icon.png);}
+#SHAPE_AUDIO{background-image:url(img/Audio-icon.png);}
+#SHAPE_TEXT{background-image:url(img/Text-icon.png);}
+
+#COMMAND_NEW{background-image:url(img/New-icon.png);}
+#COMMAND_OPEN{background-image:url(img/Open-icon.png);}
+#COMMAND_SAVE{background-image:url(img/Save-icon.png);}
+#COMMAND_CUT{background-image:url(img/Cut-icon.png);}
+#COMMAND_COPY{background-image:url(img/Copy-icon.png);}
+#COMMAND_PASTE{background-image:url(img/Paste-icon.png);}
+#COMMAND_DELETE{background-image:url(img/Delete-icon.png);}
+#COMMAND_UNDO{background-image:url(img/Undo-icon.png);}
+#COMMAND_REDO{background-image:url(img/Redo-icon.png);}
+#COMMAND_PRIVIEW{background-image:url(img/Presentation-icon.png);}
+
+#COMMAND_ARRANGE{background-image:url(img/Arrange-icon.png);}
+#COMMAND_ALIGN{background-image:url(img/Align-icon.png);}
+#COMMAND_TRANSFORM{background-image:url(img/Transform-icon.png);}
+#GROUP{background-image:url(img/Group-list.png);}
+#COMMAND_COMBINE{background-image:url(img/Combine-icon.png);}
+#COMMAND_SETTING{background-image:url(img/Setting-icon.png);}
+
+#COMMAND_PLAY{background-image:url(img/Play-icon.png);}
+#COMMAND_PAUSE{background-image:url(img/Pause-icon.png);}
+#COMMAND_STOP{background-image:url(img/Stop-icon.png);}
+#COMMAND_PRESENTATION{background-image:url(img/Presentation-icon.png);}
+#COMMAND_PROPERTIES{background-image:url(img/Properties-icon.png);}
+#COMMAND_TIMELINE{background-image:url(img/Timeline-icon.png);}
+#COMMAND_HELP{background-image:url(img/Help-icon.png);}
+
+#COMMAND_CUT.disa{background-image:url(img/Cut-icon-disabled.png);}
+#COMMAND_COPY.disa{background-image:url(img/Copy-icon-disabled.png);}
+#COMMAND_PASTE.disa{background-image:url(img/Paste-icon-disabled.png);}
+#COMMAND_DELETE.disa{background-image:url(img/Delete-icon-disabled.png);}
+#COMMAND_UNDO.disa{background-image:url(img/Undo-icon-disabled.png);}
+#COMMAND_REDO.disa{background-image:url(img/Redo-icon-disabled.png);}
+#COMMAND_RADIAL{background-image:url(img/Radial_gradient-icon.png);}
+#COMMAND_LINE{background-image:url(img/Line_gradient-icon.png);}
+
+#arrange #COMMAND_Forward{background-image:url(img/Forward-icon.png);}
+#arrange #COMMAND_Backward{background-image:url(img/Backward-icon.png);}
+#arrange #COMMAND_Front{background-image:url(img/Topmost-icon.png);}
+#arrange #COMMAND_Back{background-image:url(img/Bottommost-icon.png);}
+#align #COMMAND_Left{background-image:url(img/Left-icon.png);}
+#align #COMMAND_Right{background-image:url(img/Right-icon.png);}
+#align #COMMAND_Top{background-image:url(img/Top-icon.png);}
+#align #COMMAND_Bottom{background-image:url(img/Bottom-icon.png);}
+#align #COMMAND_HorizontalCenter{background-image:url(img/HCenter-icon.png);}
+#align #COMMAND_VerticalCenter{background-image:url(img/VCenter-icon.png);}
+#transform #COMMAND_FlipHorizontal{background-image:url(img/FlipH-icon.png);}
+#transform #COMMAND_FlipVertical{background-image:url(img/FlipV-icon.png);}
+#group #COMMAND_GROUP{background-image:url(img/Group-icon.png);}
+#group #COMMAND_UNGROUP{background-image:url(img/Ungroup-icon.png);}
+#combine #COMMAND_UNION{background-image:url(img/Union-icon.png);}
+#combine #COMMAND_JOINT{background-image:url(img/Join-icon.png);}
+#combine #COMMAND_DIFF{background-image:url(img/Diff-icon.png);}
+#setting #COMMAND_BACK{background-image:url(img/Back-icon.png);}
+#setting #COMMAND_SAVEIMAGE{background-image:url(img/SaveImage-icon.png);}
+#setting #COMMAND_TWITTER{background-image:url(img/Twitter-icon.png);}
+#setting #COMMAND_FACEBOOK{background-image:url(img/Facebook-icon.png);} 
+#setting #COMMAND_GMAIL{background-image:url(img/Gmail-icon.png);}
+#setting #COMMAND_URL{background-image:url(img/Url-icon.png);}
+#setting #COMMAND_TIP{background-image:url(img/Tip-icon.png);}
+
